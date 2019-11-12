@@ -17,7 +17,6 @@
 
 // const stopwatch = new Stopwatch();
 
-
 // Cara yang BENAR
 class Stopwatch {
   constructor() {

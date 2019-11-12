@@ -7,32 +7,32 @@
     <title>Stopwatch</title>
   </head>
   <body>
-    <div style="width:40%;">
+    <div style="width:40%">
       <div>
-        <p id="stopWatchDisplay" style="font-size:18px; font-weight:bold; font-family:cursive;">Stopwatch Display</p>
+        <p id="stopWatchDisplay" style="font-size:40px; font-weight:bold; font-family:cursive;">Stopwatch Time Display</p>
       </div>
 
-      <div class="input d-flex justify-content-between">
-            <input id="timeStart" type="text" class="form-control col-3 mx-auto d-flex justify-content-between align-items-center rounded" placeholder="Time Start" />
+      <div class="input">
+            <input id="timeStart" type="text" style="height: 30px; width: 300px; font-size: 30px" class="form-control col-3 mx-auto d-flex justify-content-between align-items-center rounded" placeholder="Time Start" />
                     <br />
                   <div id="controls1">
-                        <button id="start" onClick="mulai()" ><i></i> Start</button>
+                        <button id="start" onClick="mulai()" style="font-size: 20px" ><i></i> Start</button>
                   </div>
                   <br />
 
                   <div class="input">
-                        <input id="timeStop" type="text" class="form-control col-3 mx-auto d-flex justify-content-between align-items-center rounded" placeholder="Time Stop"  />
+                        <input id="timeStop" type="text" style="height: 30px; width: 300px; font-size: 30px" class="form-control col-3 mx-auto d-flex justify-content-between align-items-center rounded" placeholder="Time Stop"  />
                                 <br />
                               <div id="controls2">
-        <button onClick="stop()"><i></i> Stop</button>
+        <button onClick="stop()" style="font-size: 20px"><i></i> Stop</button>
                               </div>
                               <br />
 
-        <div class="input d-flex justify-content-between">
-                <input id="duration" type="text" class="form-control col-3 mx-auto d-flex justify-content-between align-items-center rounded" placeholder="Duration" value="" />
+        <div class="input">
+                <input id="duration" type="text" style="height: 30px; width: 300px; font-size: 30px" class="form-control col-3 mx-auto d-flex justify-content-between align-items-center rounded" placeholder="Duration" value="" />
                         <br />
                       <div id="controls3">
-<button onClick="duration()"><i></i>Duration</button>
+<button onClick="duration()" style="font-size: 20px"><i></i>Duration</button>
       </div>
     </div>
     <script src="script.js"></script>
