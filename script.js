@@ -1,23 +1,3 @@
-// Cara yang SALAH
-
-// class Stopwatch {
-//   constructor(duration) {
-//     this.timeStart = new Date(35400).toLocaleTimeString();
-//     this.timeStop = new Date(354100).toLocaleTimeString();
-//     this.duration = this.timeStop - this.timeStart;
-//   }
-
-//   start() {
-//     console.log("this stopwatch start at " + this.timeStart);
-//   }
-//   stop() {
-//     console.log("this stopwatch stop at " + this.timeStop);
-//   }
-// }
-
-// const stopwatch = new Stopwatch();
-
-// Cara yang BENAR
 class Stopwatch {
   constructor() {
     this.timeStart = null;
@@ -35,7 +15,7 @@ class Stopwatch {
     // console.log("this stopwatch stop at " + this.timeStop.toLocaleTimeString());
   }
   duration() {
-    this.result = this.timeStop - this.timeStart
+    this.result = this.timeStop - this.timeStart;
     // console.log(this.result);
   }
 }
@@ -55,9 +35,9 @@ const stopwatch = new Stopwatch();
 // }
 
 function mulai() {
-  let txtStart = document.getElementById("timeStart")
-  stopwatch.start()
-  txtStart.value  = `${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`;
+  let txtStart = document.getElementById("timeStart");
+  stopwatch.start();
+  txtStart.value = `${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`;
 }
 
 // ARROW FUNCTION
@@ -68,16 +48,15 @@ function mulai() {
 // }
 
 function stop() {
-  let txtStop = document.getElementById("timeStop")
-  stopwatch.stop()
-  txtStop.value  = `${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`;
+  let txtStop = document.getElementById("timeStop");
+  stopwatch.stop();
+  txtStop.value = `${new Date().getHours()}:${new Date().getMinutes()}:${new Date().getSeconds()}`;
   // console.log(typeof txtStop.value)
 }
 
 function duration() {
-  event.preventDefault()
-  let txtDuration = document.getElementById("duration")
-  stopwatch.duration()
-  txtDuration.value  = `${stopwatch.result/ 1000} s`
+  event.preventDefault();
+  let txtDuration = document.getElementById("duration");
+  stopwatch.duration();
+  txtDuration.value = `${stopwatch.result / 1000} s`;
 }
-
